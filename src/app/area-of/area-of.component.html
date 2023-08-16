@@ -1,0 +1,50 @@
+<div class="bg-info text-dark">
+    <div class="row">  
+        <div class="col-sm-6">   
+            <br>      
+            <img style="margin-top: 30px; margin-left: 100px;" src="assets/image/image.png" class=" rounded float-left bg-info" name="image">    
+        </div> 
+        
+
+          <div class="form-outline mb-4">      
+            <div class="sec-center"  (change)="getSelectedValue($event)"> 	
+              <input class="dropdown" value="dropmenu" type="checkbox" id="dropdown" name="dropdown"/>
+              <label class="for-dropdown" for="dropdown">Dropdown Menu</label>
+              <div class="section-dropdown"> 
+
+                <input class="dropdown-add"  value="add" type="checkbox" id="dropdown-add" name="dropdown-add"/>
+                <label class="for-dropdown-add" for="dropdown-add" value="add">Area Of Rectangle</label>
+                <div class="section-dropdown-add"> 
+                  <a href="#"><input type="number" class="form-control" placeholder="Width" [(ngModel)]="width"></a>
+                  <a href="#"><input type="number" class="form-control" placeholder="height" [(ngModel)]="height"></a>
+                </div>
+
+                <input class="dropdown-sub" value="sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+                <label class="for-dropdown-sub" for="dropdown-sub" value="sub">Area Of Square</label>
+                <div class="section-dropdown-sub"> 
+                  <a href="#"><input type="number" class="form-control" placeholder="Width" [(ngModel)]="side"></a>
+                </div>
+
+                <input class="dropdown-mul" value="mul" type="checkbox" id="dropdown-mul" name="dropdown-mul"/>
+                <label class="for-dropdown-mul" for="dropdown-mul" value="mul">Area Of Circle</label>
+                <div class="section-dropdown-mul"> 
+                  <a href="#"><input type="number" class="form-control" placeholder="radius" [(ngModel)]="radius"></a>
+                </div>
+              </div>
+            </div>            
+      </div>
+      <form  style="margin-top: 250px; margin-left: 200px;" >
+        <button class="btn btn-secondary" type="button" (click)="calculate()">Calculate</button>
+        <h2><span>{{col}}</span></h2>
+        
+
+        </form>
+      
+      </div> 
+      
+
+
+        
+
+   
+   
